@@ -10,3 +10,10 @@ h1:hover {
 	font-size: 900px;
 	transform: rotate(180deg);
 }
+
+button-dec {
+	color: black;
+	background-color: yellow;
+	border: solid 1px red;
+	border-radius: 20px;
+}
