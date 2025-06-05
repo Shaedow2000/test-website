@@ -1013,10 +1013,3 @@ main {
     height: 0;
   }
 }
-
-.button-dec {
-	color: black;
-	background-color: yellow;
-	border: solid 1px red;
-	border-radius: 20px;
-}
