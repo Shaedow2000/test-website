@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.hover-effect {
+  border: 3px solid rgb(16, 16, 236);
+  border-radius: 20px;
+  color: lightblue;
+  font-weight: bold;
+  background: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 2;
+  animation: infinite 2s btn-non-hover;
+  transition: ease-in-out 0.5s;
+}
+.hover-effect:hover {
+  background-color: blue;
+  color: lightblue;
+  border-radius: 50%;
+  padding: 25px 10px;
+  transition: ease-in-out 0.5s;
+  animation: infinite 2s btn-hover;
+}
+.hover-effect:active {
+  animation: infinite 5s btn-active;
+}
+
+@keyframes btn-non-hover {
+  20% {
+    background: transparent;
+    color: lightblue;
+  }
+  60% {
+    background: rgba(16, 16, 236, 1);
+    color: lightskyblue;
+  }
+  100% {
+    background: transparent;
+    color: lightblue;
+  }
+}
+
+@keyframes btn-hover {
+  20% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes btn-active {
+  10% {
+    background-color: blue;
+    color: lightblue;
+    border-radius: 50%;
+    padding: 25px 10px;
+  }
+  25% {
+    transform: scale(0.8);
+    background-color: darkblue;
+    border-radius: 30%;
+    padding: 25px 10px;
+  }
+  45% {
+    transform: scale(0.6);
+    background-color: darkblue;
+    border-radius: 30%;
+    padding: 10px 0px;
+    font-weight: lighter;
+    font-size: medium;
+  }
+  65% {
+    transform: scale(0.8);
+    background-color: darkblue;
+    border-radius: 30%;
+    padding: 25px 10px;
+    font-weight: bold;
+    font-size: large;
+  }
+  100% {
+    background-color: blue;
+    color: lightblue;
+    border-radius: 50%;
+    padding: 25px 10px;
+  }
+}
