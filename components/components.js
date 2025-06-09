@@ -10,13 +10,13 @@ class LikeButton extends HTMLElement {
 	    display: flex;
 	    justify-content: center;
 	    align-items: center;
-            background-color: brown;
-            color: brown;
+            background-color: aquamarine;
+            color: darkstalegrey;
             font-weight: bold;
             padding: 10px 15px;
             border: none;
             border-radius: 20px;
-	    transition: ease 15s;
+	    transition: ease .5s;
 	    cursor: pointer;
 	}
 	like-button:hover {
