@@ -10,8 +10,8 @@ class LikeButton extends HTMLElement {
 	    display: flex;
 	    justify-content: center;
 	    align-items: center;
-            background-color: aquamarine;
-            color: darkslategrey;
+            background-color: brown;
+            color: brown;
             font-weight: bold;
             padding: 10px 15px;
             border: none;
