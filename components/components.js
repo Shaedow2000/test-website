@@ -16,7 +16,7 @@ class LikeButton extends HTMLElement {
             padding: 10px 15px;
             border: none;
             border-radius: 20px;
-	    transition: ease .5s;
+	    transition: ease 15s;
 	    cursor: pointer;
 	}
 	like-button:hover {
