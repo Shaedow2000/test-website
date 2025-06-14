@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="html responsive website test">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script defer src="index.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Products</li>
+      <li>Learn</li>
+      <li>About</li>
+      <li>Settings</li>
+      <button onclick="openSidebar()">
+        <img src="menu_24dp_C4CCC8_FILL0_wght400_GRAD0_opsz24.svg" alt="open_menu">
+      </button>
+    </ul>
+    <ul id="mobile-nav">
+      <h2>Menu</h2>
+      <button onclick="closeSidebar()" class="x-mark">
+        <img src="close_24dp_C4CCC8_FILL0_wght400_GRAD0_opsz24.svg" alt="x-mark">
+      </button>
+      <li>Products</li>
+      <li>Learn</li>
+      <li>About</li>
+      <li>Settings</li>
+    </ul>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: "Sour Gummy", sans-serif;
+    color: #c4ccc8;
+}
+body {
+    background: darkgrey;
+    width: 100vw;
+    height: 100vh;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: darkolivegreen;
+    list-style-type: none;
+}
+nav ul li {
+    display: block;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+nav ul button {
+    position: absolute;
+    display: none;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    transition: ease 0.5s;
+}
+.x-mark {
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+nav ul img {
+    position: relative;
+    display: none;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+#mobile-nav img {
+    margin: 0;
+}
+nav:hover ul li {
+    padding: 20px;
+}
+nav ul li:hover, nav ul button:hover {
+    background-color: rgba(128, 128, 128, 0.52);
+}
+nav ul li:active, nav ul button:active {
+    background-color: rgba(37, 38, 45, 0.87);
+}
+#mobile-nav {
+    position: fixed;
+    top: -10000px;
+    display: block;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: darkolivegreen;
+    z-index: 100;
+    transition: ease 0.8s;
+}
+#mobile-nav li {
+    display: block;
+    padding: 15px;
+    margin: 0;
+}
+#mobile-nav:hover li {
+    padding: 16px;
+}
+#mobile-nav h2 {
+    padding: 10px;
+}
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: none;
+        padding: 12px;
+        margin-left: 10px;
+    }
+    nav ul img {
+        display: block;
+    }
+    nav ul button {
+        display: flex;
+    }
+    nav ul li:first-child {
+        display: block;
+        position: relative;
+    }
+    nav ul {
+        justify-content: start;
+    }
+    nav:hover ul li {
+        padding: 16px;
+    }
+    #mobile-nav {
+        position: absolute;
+        right: 0;
+        width: 280px;
+        box-shadow: rgba(0, 0, 0, 0.49) 0 0 0 100vw;
+    }
+}
+@media screen and (max-width: 380px) {
+    #mobile-nav {
+        width: 100%;
+    }
+}
